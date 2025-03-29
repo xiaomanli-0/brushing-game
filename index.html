@@ -8,21 +8,42 @@
 </head>
 <body>
     <div class="game-container">
-        <div class="teeth-model">
+        <div class="game-selection">
+            <button class="game-btn active" data-game="brushing">刷牙游戏</button>
+            <button class="game-btn" data-game="sealant">窝沟封闭</button>
+        </div>
+        
+        <div class="teeth-model brushing-game">
             <!-- 牙齿模型将在这里插入 -->
         </div>
+        
+        <div class="teeth-model sealant-game" style="display:none">
+            <!-- 窝沟封闭牙齿模型 -->
+        </div>
+        
         <div class="controls">
-            <button id="start-btn">开始刷牙</button>
+            <button id="start-btn">开始</button>
             <div class="timer">时间: <span id="timer">120</span>秒</div>
             <div class="score">得分: <span id="score">0</span></div>
         </div>
-        <div class="instructions">
+        <div class="instructions brushing-instructions">
             <h2>巴氏刷牙法指南</h2>
             <ol>
                 <li>牙刷与牙齿呈45度角</li>
                 <li>轻轻加压，使刷毛进入龈沟</li>
                 <li>短距离水平颤动刷牙</li>
                 <li>每个区域刷10次左右</li>
+            </ol>
+        </div>
+        
+        <div class="instructions sealant-instructions" style="display:none">
+            <h2>窝沟封闭指南</h2>
+            <ol>
+                <li>清洁牙齿表面</li>
+                <li>涂布酸蚀剂</li>
+                <li>冲洗并干燥</li>
+                <li>涂布封闭剂</li>
+                <li>光固化处理</li>
             </ol>
         </div>
     </div>

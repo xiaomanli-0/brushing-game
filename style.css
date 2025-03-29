@@ -38,6 +38,28 @@ body {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* 游戏选择按钮 */
+.game-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.game-btn {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.game-btn.active {
+    background-color: #4CAF50;
+    color: white;
 }
 
 /* 牙齿模型区域 */
@@ -49,6 +71,10 @@ body {
     border: 2px solid #ddd;
     border-radius: 8px;
     margin-bottom: 20px;
+}
+
+.sealant-game {
+    background-color: #e8f5e9;
 }
 
 /* 控制区域 */
@@ -99,6 +125,10 @@ body {
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #eee;
+}
+
+.sealant-instructions {
+    background-color: #e8f5e9;
 }
 
 .instructions h2 {
