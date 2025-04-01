@@ -186,6 +186,13 @@ function startGame() {
     scoreDisplay.textContent = score;
     startBtn.disabled = true;
     
+    // 显示开始提示
+    alert('开始刷牙！请按照45度角刷牙，覆盖所有牙齿表面');
+    
+    // 播放开始音效
+    const startSound = document.getElementById('startSound');
+    startSound.play().catch(e => console.log('无法播放音效:', e));
+    
     // 启动计时器
     timerInterval = setInterval(updateTimer, 1000);
 }

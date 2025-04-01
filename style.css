@@ -270,6 +270,30 @@ body {
     display: none;
 }
 
+/* 预防龋齿图片样式 */
+.prevention-image {
+    margin: 20px auto;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+.prevention-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.prevention-image img:hover {
+    transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 /* 精美插图样式 */
 .tooth-illustration {
     width: 120px;
